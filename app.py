@@ -21,7 +21,7 @@ images_sorted = natsort.natsorted(images,reverse=False)
 
 
 print("Obcinanie...")
-# for img in tqdm(glob.glob(input_dir + "/*.png")):
+
 for img in tqdm(images_sorted):
     image = cv2.imread(img)
     imgCropped = image[0:800, 430:910]
